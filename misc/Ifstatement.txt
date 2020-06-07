@@ -1,0 +1,17 @@
+//If
+If, <condition>:
+  <statements>.
+
+//If, Else
+If, <condition>:
+  <statements>.
+Else:
+  <statements>.
+
+//If, Else If, Else
+If, <condition>:
+  <statements>.
+Else, <condition>:
+  <statements>.
+Else:
+  <statements>.

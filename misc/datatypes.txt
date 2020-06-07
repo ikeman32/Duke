@@ -1,0 +1,14 @@
+//Data Types
+
+Integer: [0-9] // I want, Integer called myInt, is 6.
+Double: [0-9|.|0-9] // I want, Double called myDbl, is 0.6.
+String: [a-z|A-Z|0-9] // I want, String called myStr, is 'Hello World!'.
+Boolean: [true|false] // I want, Boolean called myBool, is true.
+intArray: [0-9,0-9|***] // I want, intArray called myIntArray, is:0, 1 , 2, 56.
+strArray: [a-z, A-Z|***] // I want, strArray called myStrArray, is: 'Hello', 'World'.
+objArray: [key: value|***] // I want, objArray called myObjArray, is: animal: 'cat', age: 6.
+
+I want:
+  Integer called int, is null;
+  Integer called myInt, is 6;
+  String called myStr, is 'Hello'.

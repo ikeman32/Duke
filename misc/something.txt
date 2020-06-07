@@ -1,0 +1,100 @@
+//declare a window with the name of main.
+I want, a Window called main.
+
+//declare an integer variable called myInt and assign the number 5 to the variable.
+I want, an Integer called myInt, is 5.
+
+//declare multiple objects at one time.
+I want:
+    an Integer called myInt, is 6;
+    a String called myStr, is 'Hello World!';
+    a Window called main.
+
+//set multiple properties of the window called main.
+main has:
+    Title is 'Main window';
+    Scroll is right, bottom;
+    Size is 800, 600;
+    Child is false.
+
+//declare  label object named myLabel and assign the value of myString.
+I want, a Label called myLabel, is myString.
+
+//Place myLabel in the very middle of main
+Place myLabel in main, Middle.
+
+//If the window called main has the Child property value of true the return true Else return false
+If, main Child:
+    Return true;
+Else: Return false.
+
+//declare a Integer variable and assign the value of 0
+I want, an Integer called x, is 0.
+
+//If x has a value equal to 0
+If, x value 0:
+
+    //then add 1 to the value of x
+    x add 1;
+
+//Else If the value of x is less than 10
+Else, x Less 10:
+
+    //add 2 to the value of x
+    x add 2;
+Else:
+    //Else add 3 to the value of x
+    x add 3.
+
+//start looping with 0 as the initial count value and display the count
+Loop count, 0 to 9:
+    Print, count.
+
+//Loop while the value of x is less than 100
+//display the value of x then
+//If the value of x is more than 100 Break out of the loop
+//Else resume the loop
+Loop while, x Less 100:
+    Print, x;
+    If, x More 100:
+        Breakout;
+    Else:
+        Resume.
+
+//Loop until the value of x is equal to 100
+//Print the value of x while adding 1 to the value
+Loop until, x value 100:
+    Print, x add 1.
+
+//Infinite loop until Breakout is called
+Loop until, Breakout:
+    Print, x add 1.
+
+//declare an Integer variable called rand, assign it a Random value from 1 to 100
+I want, an Integer called rand, is Random, 1 to 100.
+
+//sample gui program
+
+I want:
+    a Window called main;
+    an Integer called rand, is null;
+    a Label called myRand, is null;
+    a Button called btnRand, is 'Roll!'.
+
+Place in main:
+  myRand, Middle;
+  btnRand, Under myRand.
+
+Click, btnRand:
+  rand, value is Random, 1 to 100;
+  myRand, is rand.
+
+/---------------------------------------------------/
+
+Choose, myVar:
+  'A':
+    Print, 'You have chosen the Letter A!'.
+  5:
+    Print, 'You have chosen the Number 5!'
+  Default:
+    Print, 'Invalid choice!'.

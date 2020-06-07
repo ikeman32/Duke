@@ -1,0 +1,15 @@
+//Like a for loop
+
+Loop, n to n:
+  <statements>.
+
+
+Loop, var value n:
+  <statements>.
+
+Loop, var Less n:
+  <statements>.
+
+//Infinite loop
+Loop:
+  <statements>.

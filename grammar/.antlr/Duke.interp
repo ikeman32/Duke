@@ -1,0 +1,50 @@
+token literal names:
+null
+':'
+'Boolean'
+'Choose'
+'I want'
+'sub'
+'Default'
+'Double'
+'Else'
+'If'
+'add'
+'Integer'
+'Loop'
+','
+'String'
+';'
+'.'
+null
+null
+null
+
+token symbolic names:
+null
+Block
+Bool
+Choose
+Declare
+Decrement
+Defaut
+Double
+Else
+If
+Increment
+Integer
+Loop
+Separator
+String
+Nonterminal
+Terminal
+Id
+BlockComment
+LineComment
+
+rule names:
+ifStatement
+
+
+atn:
+[3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 21, 8, 4, 2, 9, 2, 3, 2, 3, 2, 3, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 6, 2, 4, 3, 2, 2, 2, 4, 5, 7, 11, 2, 2, 5, 6, 7, 15, 2, 2, 6, 3, 3, 2, 2, 2, 2]
