@@ -35,10 +35,29 @@ createBlock: Create Block obj Separator Id Assignment (Num|Bop) (Nonterminal | D
     dbl, myDbl has 2.5.
  */
 
-// loopStatement: 'Loop' ',' condition ':' statements '..'| ';';
+loopStatement: Loop Separator condition Block statements (Nonterminal | Done);
 
-// chooseStatement: 'Choose' ',' 'var' ':' Id ':' statements '..'| ';'
-//    'Default' ':' statements '..'| ';' ;
+/*
+Create int, myInt has 0.
+Loop, myInt is! 10:
+    myInt has+ 1.
+ */
+
+chooseStatement: Choose Separator Id Block Id Separator statements (Nonterminal | Done) Terminal |
+    Choose Separator Id Block Id Separator statements (Nonterminal | Done) Default statements (Nonterminal | Done) Terminal;
+
+/*
+Choose, myInt:
+    4, print 'Is 4'.
+    5, print 'Is 5'.
+    6, print 'Is 6'..
+
+Choose, myInt:
+    4, print 'Is 4'.
+    5, print 'Is 5'.
+    6, print 'Is 6'.
+    Otherwise, print 'Not found.'..
+ */
 
 
 condition: Id Cmp Id;
@@ -76,9 +95,9 @@ Bool: 'Boolean' | 'Bool' | 'bool';
 Choose: 'Choose' | 'choose';
 Create: 'Create' | 'create';
 Decrement: 'Dec' | 'dec';
-Defaut: 'Otherwise';
+Default: 'Otherwise';
 Double: 'Double' | 'double' | 'dbl';
-Function: 'Func';
+Function: 'Func' | 'Function';
 If: 'If' | 'if';
 Increment: 'Inc' | 'inc';
 Integer: 'Integer' | 'Int' | 'int';
