@@ -1,5 +1,0 @@
-Choose, var:
-  <choice String or Number>:
-    <statements>.
-  Default:
-    <statements>.
